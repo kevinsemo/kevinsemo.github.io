@@ -1,16 +1,16 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Kevin Semo</title>
-<meta name="description" content="Founder and CEO at Dossiay. I build AI agents, automation, and production software end to end, and take them to market.">
+<meta name="description" content="Founder &amp; CEO of Dossiay. I go into a messy customer problem, build the system that solves it, and ship it to production: AI agents, payments and production software.">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Kevin Semo">
-<meta property="og:title" content="Kevin Semo - Founder, AI Product Builder">
-<meta property="og:description" content="Founder and CEO at Dossiay. I build AI agents, automation, and production software end to end, and take them to market.">
+<meta property="og:title" content="Kevin Semo · Founder &amp; CEO · Forward Deployed Engineer">
+<meta property="og:description" content="Founder &amp; CEO of Dossiay. I go into a messy customer problem, build the system that solves it, and ship it to production: AI agents, payments and production software.">
 <meta property="og:url" content="https://kevinsemo.github.io/">
 <meta property="og:image" content="https://kevinsemo.github.io/og-image.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Kevin Semo - Founder, AI Product Builder">
-<meta name="twitter:description" content="Founder and CEO at Dossiay. I build AI agents, automation, and production software end to end, and take them to market.">
+<meta name="twitter:title" content="Kevin Semo · Founder &amp; CEO · Forward Deployed Engineer">
+<meta name="twitter:description" content="Founder &amp; CEO of Dossiay. I go into a messy customer problem, build the system that solves it, and ship it to production: AI agents, payments and production software.">
 <meta name="twitter:image" content="https://kevinsemo.github.io/og-image.jpg">
 <style>
   @font-face {
@@ -466,6 +466,13 @@
     *, *::before, *::after { animation-duration: .001ms !important; transition-duration: .001ms !important; }
     .card:hover, a.btn:hover { transform: none; }
   }
+  .role-sub { font-size: 14px; letter-spacing: .04em; color: var(--coral); font-weight: 500; margin: 8px 0 22px; }
+  .cards.four { grid-template-columns: repeat(2, 1fr); }
+  .paths { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 0 0 30px; text-align: left; }
+  .path { border-radius: 18px; padding: 22px; background: var(--glass-2); border: 1px solid var(--edge); }
+  .path h3 { margin: 0 0 8px; font-size: 17px; font-weight: 500; font-family: var(--sans); }
+  .contact-box .path p { margin: 0; max-width: none; font-size: 14.5px; }
+  @media (max-width: 620px) { .cards.four, .paths { grid-template-columns: 1fr; } }
 </style>
 
 <div class="wrap">
@@ -475,11 +482,12 @@
       <div class="kicker">San Francisco Bay Area</div>
       <h1>Kevin<br />Semo</h1>
       <div class="role">Founder &amp; CEO</div>
+      <div class="role-sub">Forward Deployed Engineer · AI Solutions Engineer · GTM Engineer</div>
       <p class="lede">Hands-on technical founder who moves between customer, product, engineering, and GTM.</p>
-      <p class="sub">I've built products end to end — customer discovery and product strategy through software development, launch, and go-to-market. I recruited, hired and led eight full-stack developers who shipped our two mobile apps, and I built our web platform hands-on with AI agents. More recently I've been building AI agents and automation systems, and running them in production.</p>
+      <p class="sub">I go into a messy customer problem, build the system that solves it, and ship it to production. At Dossiay I built the web platform, the payments ledger, and the AI agents that run sales and onboarding, after recruiting, hiring and leading eight full-stack developers who shipped our two mobile apps.</p>
       <div class="cta-row">
         <a class="btn primary" href="mailto:kevin.m.semo@gmail.com">Email</a>
-        <a class="btn" href="https://www.linkedin.com/in/kevinsemo/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="https://www.linkedin.com/in/kevinsemo/" target="_blank" rel="noopener">Connect on LinkedIn</a>
       </div>
     </div>
     <div class="portrait-frame">
@@ -509,10 +517,28 @@
   <!-- ================= SYSTEMS ================= -->
   <section>
     <div class="sec-label">Systems</div>
-    <h2 class="sec">Three systems running in production.</h2>
-    <p class="sec-sub">The multi-agent system that builds Dossiay, the pipeline that finds its customers, and the rails that move its money. Open any card for the architecture, the decisions behind it, and what broke.</p>
+    <h2 class="sec">Four systems running in production.</h2>
+    <p class="sec-sub">The agents that run Dossiay's sales and onboarding, the multi-agent system that builds it, the pipeline that finds its customers, and the rails that move its money. Open any card for the architecture, the decisions behind it, and what broke.</p>
 
-    <div class="cards">
+    <div class="cards four">
+      <button class="card" data-modal="m-ops">
+        <svg class="diagram" viewBox="0 0 200 104" aria-hidden="true">
+          <rect class="d-box" x="4" y="10" width="54" height="18" rx="6"/><text class="d-t" x="31" y="22" text-anchor="middle">inbox · DMs</text>
+          <path class="d-hot" d="M60 19 H70"/><path class="d-hotf" d="M70 16.5 l5.5 2.5 -5.5 2.5 z"/>
+          <rect class="d-box" x="78" y="10" width="44" height="18" rx="6"/><text class="d-t" x="100" y="22" text-anchor="middle">triage</text>
+          <path class="d-hot" d="M124 19 H134"/><path class="d-hotf" d="M134 16.5 l5.5 2.5 -5.5 2.5 z"/>
+          <rect class="d-box" x="142" y="10" width="54" height="18" rx="6"/><text class="d-t" x="169" y="22" text-anchor="middle">drafts</text>
+          <text class="d-t" x="100" y="44" text-anchor="middle">22-case playbook · deterministic gates</text>
+          <path class="d-line" d="M169 28 V56 H128"/>
+          <rect class="d-hot" x="72" y="50" width="56" height="18" rx="6"/><text class="d-tb" x="100" y="62" text-anchor="middle">I approve</text>
+          <path class="d-line" d="M100 68 V78"/>
+          <rect class="d-box" x="56" y="78" width="88" height="17" rx="6"/><text class="d-tb" x="100" y="90" text-anchor="middle">send · onboard</text>
+        </svg>
+        <h3>Agents that run sales &amp; onboarding</h3>
+        <p>Three agents working the sales inboxes, creator outreach and onboarding into production, with a human approval on everything that goes out.</p>
+        <span class="more">Open case study →</span>
+      </button>
+
       <button class="card" data-modal="m-agents">
         <svg class="diagram" viewBox="0 0 200 104" aria-hidden="true">
           <rect class="d-hot" x="72" y="8" width="56" height="18" rx="6"/>
@@ -585,9 +611,10 @@
       <div>
         <p>A two-sided marketplace connecting local businesses with TikTok, Instagram and YouTube creators. I own product, engineering, AI systems and go-to-market.</p>
         <ul>
-          <li>Led the development team that rebuilt both iOS apps in <strong>React Native</strong>.</li>
           <li>Built the web platform hands-on: a <strong>React 19 / Vite</strong> web app, a <strong>Node.js</strong> backend, Python data pipelines, and AWS infrastructure across Lambda, API Gateway, DynamoDB, S3 and Cognito.</li>
-          <li>Built the AI running inside the product and the multi-agent system that builds it.</li>
+          <li>Built the <strong>AI agents that run sales and onboarding</strong>, behind human approval, and the AI inside the product, including the <strong>creator search</strong> businesses use to find creators.</li>
+          <li>Built an append-only <strong>Stripe ledger</strong> that can't double-post, and took payments live with Connect payouts and Stripe Tax.</li>
+          <li>Led the development team that rebuilt both iOS apps in <strong>React Native</strong>.</li>
           <li>Owned production infrastructure end to end — DNS, TLS, alerting, CI gates and <strong>more than 1,000 automated tests</strong>.</li>
           <li>Ran <strong>200+ customer discovery interviews</strong> with restaurant owners and creators, translating findings into UX, pricing and ICP decisions.</li>
         </ul>
@@ -749,11 +776,21 @@
   <!-- ================= CONTACT ================= -->
   <section>
     <div class="contact-box">
-      <h2>Let's talk.</h2>
-      <p>I'm particularly interested in Forward Deployed Engineer, AI solutions, technical product, and GTM engineering roles where I can take ambiguous problems and turn them into working technical systems.</p>
+      <h2>Work with me.</h2>
+      <p>Two ways in.</p>
+      <div class="paths">
+        <div class="path">
+          <h3>Hiring for a Forward Deployed or Solutions role</h3>
+          <p>I'm most interested in Forward Deployed Engineer, AI solutions and GTM engineering roles, where I can take an ambiguous customer problem and turn it into a working system.</p>
+        </div>
+        <div class="path">
+          <h3>Need an AI system built inside your team</h3>
+          <p>I embed with your team, scope the problem with the people who have it, build the system, ship it to production, and hand it over with what your engineers need to run it.</p>
+        </div>
+      </div>
       <div class="cta-row">
         <a class="btn primary" href="mailto:kevin.m.semo@gmail.com">Email</a>
-        <a class="btn" href="https://www.linkedin.com/in/kevinsemo/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="https://www.linkedin.com/in/kevinsemo/" target="_blank" rel="noopener">Connect on LinkedIn</a>
       </div>
     </div>
     <footer>
@@ -764,10 +801,40 @@
 </div>
 
 <!-- ================= MODALS ================= -->
-<dialog id="m-agents">
+<dialog id="m-ops">
   <div class="m-head">
     <div>
       <div class="m-kicker">System 01</div>
+      <h3>Agents that run sales &amp; onboarding</h3>
+    </div>
+    <button class="close" type="button">Close</button>
+  </div>
+  <div class="m-body">
+    <h4>The problem</h4>
+    <p>Replies across two sales mailboxes, creator conversations on Instagram, and businesses that said yes and needed an account. Each one deserves a fast, specific answer, and a wrong email to a real business is hard to take back. Speed and care pulled in opposite directions.</p>
+
+    <h4>What I built</h4>
+    <p>Three agents on Claude Code, each working a real business workflow and each stopping at a human approval.</p>
+    <ul>
+      <li><strong>Inbox agent.</strong> Works both sales mailboxes in one pass, sorts every reply into a <strong>22-case playbook</strong>, fans drafting out to parallel subagents, and builds a tailored one-pager when a prospect asks to see something. It leaves drafts in the thread and never sends.</li>
+      <li><strong>Creator-outreach agent.</strong> Pre-types Instagram messages and follow-ups for me to send, and keeps a ledger of every thread.</li>
+      <li><strong>Onboarding agent.</strong> Reads the email thread to confirm a business actually agreed, then, after I approve, creates its account and promotion in production and sends the invite.</li>
+      <li><strong>Deterministic gates</strong> check every draft against the playbook's rules before it reaches me, so the model's output is never the last word.</li>
+    </ul>
+
+    <h4>Human approvals</h4>
+    <p>Nothing goes out without my approval. That's the design, not a limitation: the agents do the reading, sorting and drafting, and the decision to contact a real business stays with a person.</p>
+
+    <h4>What broke</h4>
+    <p>A run re-proposed work that was already done. The records were keyed on the event rather than the lead, and sorted by draft time, so a bounce or a decision on the same lead was invisible to the next run. The fix keyed everything on the lead and made the email thread the source of truth.</p>
+    <p>A follow-up reached a lead through a second send path the agent didn't check: an email scheduled in the mail client itself. The rule since: check every send path before reporting what a lead received, run a send guard on every draft, and let the agent pause a campaign the moment something looks wrong.</p>
+  </div>
+</dialog>
+
+<dialog id="m-agents">
+  <div class="m-head">
+    <div>
+      <div class="m-kicker">System 02</div>
       <h3>Multi-agent orchestration</h3>
     </div>
     <button class="close" type="button">Close</button>
@@ -795,7 +862,7 @@
 <dialog id="m-gtm">
   <div class="m-head">
     <div>
-      <div class="m-kicker">System 02</div>
+      <div class="m-kicker">System 03</div>
       <h3>AI GTM pipeline</h3>
     </div>
     <button class="close" type="button">Close</button>
@@ -836,7 +903,7 @@
 <dialog id="m-pay">
   <div class="m-head">
     <div>
-      <div class="m-kicker">System 03</div>
+      <div class="m-kicker">System 04</div>
       <h3>Payments &amp; money path</h3>
     </div>
     <button class="close" type="button">Close</button>
